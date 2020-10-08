@@ -27,13 +27,19 @@ public class FbLogin2
 	@Test
 	public void verifyTitle()
 	{
-		Assert.assertEquals(driver.getTitle(), "Facebook – log in or sign up");
+		Assert.assertEquals(driver.getTitle(), "Facebook â€“ log in or sign up");
 	}
 	
 	@Test
 	public void verifyUrl()
 	{
 		Assert.assertEquals(driver.getCurrentUrl(), "https://www.facebook.com/");
+	}
+	
+	@Test
+	public void verifylogin()
+	{
+		System.out.println("This is login button");
 	}
 	
 	@AfterTest
